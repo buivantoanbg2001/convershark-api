@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "name": "convershark-api",
-  "builds": [
-    {
-      "src": "src/main.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "name": "kaufman-bot",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/main.js",
-      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"]
+      "dest": "dist/apps/server/main.js"
     }
   ]
 }
