@@ -1,16 +1,16 @@
 {
   "version": 2,
+  "name": "convershark-api",
   "builds": [
     {
-      "src": "src/main.js",
+      "src": "dist/main.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/main.js",
-      "methods": ["GET", "POST", "PUT", "DELETE"]
+      "dest": "dist/main.js"
     }
   ]
 }
